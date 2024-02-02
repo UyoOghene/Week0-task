@@ -1,64 +1,69 @@
+
+body {
+    display: block;
+    margin: 10px;
+}
+
+.guess {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    border-color: black;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 .red{
     background-color: red;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
-    
+ 
 }
 .orange{
     background-color: orange;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
     
 }
 .yellow{
     background-color: yellow;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
     
 }
 .green{
     background-color: green;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
     
 }
 .blue{
     background-color: blue;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
     
 }
 .indigo{
     background-color: indigo;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
     
 }
 .violet{
     background-color: violet;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
     
 }
-.red{
-    background-color: red;
-    width:50px;
-    height: 80px;
-    border-color: black;
-    margin: 10px;
-    
+.click {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+    font-weight: 100px;  
+    font-size: 30px;  
 }
+
