@@ -10,7 +10,10 @@ body {
     margin-top: 50px;
     width: 50%;
     border-color: black;
+    background-color: aqua;
 }
+    
+
 
 .boxes {
     display: flex;
