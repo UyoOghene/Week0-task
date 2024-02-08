@@ -70,11 +70,8 @@ body {
 
 #colortext {
     /* background-color: aqua; */
-    border-bottom: 2px solid black;
     font-size: 10px;
-    text-align: left;
-    width: fit-content;
-    margin-bottom: 0px;
+    text-align: center;
 
 }
 
