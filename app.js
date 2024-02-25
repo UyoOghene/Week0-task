@@ -3,21 +3,29 @@ const red = document.getElementById('red');
 const colorguess = document.getElementById('colorguess');
 
 red.addEventListener('click',al);
-colorguess.addEventListener('keydown',enterColor);
+colorguess.addEventListener('submit',enterColor);
 const vaColor = colorguess.value;
 
 function enterColor (e){
     console.log(e.key);
     if (e.key === "Enter"){
-        console.log();
+        console.log(vaColor);
     }
+   
 }
 
-function al(event){
-    console.log(event.target.id);
-    colortext.innerText=event.target.id;
+// function al(event){
+//     console.log(event.target.id);
+//     colortext.innerText=event.target.id;
 
-}
+// }
+
+
+
+
+
+
+
 
 
 
