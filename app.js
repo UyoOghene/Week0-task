@@ -2,23 +2,28 @@ const colortext = document.getElementById('colortext');
 const red = document.getElementById('red');
 const colorguess = document.getElementById('colorguess');
 
-red.addEventListener('click',al);
-colorguess.addEventListener('submit',enterColor);
-const vaColor = colorguess.value;
+// red.addEventListener('click',al);
 
 function enterColor (e){
-    console.log(e.key);
+    // e.preventDefault();
+
     if (e.key === "Enter"){
-        console.log(vaColor);
+        console.log(colorguess.value);
+        
     }
+
    
 }
+colorguess.addEventListener('keydown', enterColor);
+
 
 // function al(event){
 //     console.log(event.target.id);
 //     colortext.innerText=event.target.id;
 
 // }
+// console.log(vaColor);
+
 
 
 
