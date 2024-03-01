@@ -1,94 +1,121 @@
 const colortext = document.getElementById('colortext');
 const red = document.getElementById('red');
+const blue = document.getElementById('blue');
+const green = document.getElementById('green');
+const yellow = document.getElementById('yellow');
+const orange = document.getElementById('orange');
+const indigo = document.getElementById('indigo');
+const violet = document.getElementById('violet');
+const guesstxt =document.getElementById('output');
 const colorguess = document.getElementById('colorguess');
 
 // red.addEventListener('click',al);
 
 function enterColor (e){
-    // e.preventDefault();
 
     if (e.key === "Enter"){
-        console.log(colorguess.value);
+        const typeColor = colorguess.value;
+        console.log(typeColor);
         
-    }
+    }  
+    const typeColor = colorguess.value;
+    guesstxt.style.color = typeColor;
 
-   
+
+    if(typeColor === 'red'){
+       red.style.border = '5px solid black';
+       guesstxt.innerText = 'You chose red';
+        }
+
+    if(typeColor === 'blue'){
+       blue.style.border = '5px solid black';
+       guesstxt.innerText = 'You chose blue';
+        }
+
+    if(typeColor === 'green'){
+       green.style.border = '5px solid black';
+       guesstxt.innerText = 'You chose green';
+        }
+
+    if(typeColor === 'yellow'){
+       yellow.style.border = '5px solid black';
+       guesstxt.innerText = 'You chose yellow';
+        }
+    if(typeColor === 'orange'){
+       orange.style.border = '5px solid black';
+       guesstxt.innerText = 'You chose orange';
+        }
+
+    if(typeColor === 'indigo'){
+       indigo.style.border = '5px solid black';
+       guesstxt.innerText = 'You chose indigo';
+        }
+
+    if(typeColor === 'violet'){
+       violet.style.border = '5px solid black';
+       guesstxt.innerText = 'You chose violet';
+        }
 }
+
 colorguess.addEventListener('keydown', enterColor);
 
+function al(event){
+    console.log(event.target.id);
+    colortext.innerText=event.target.id;
 
-// function al(event){
-//     console.log(event.target.id);
-//     colortext.innerText=event.target.id;
-
-// }
-// console.log(vaColor);
+}
 
 
 
+function manos(){
+    // console.log(colortext.innerText);
+    colortext.innerText='red';
+}
+red.addEventListener('click', manos);
+function cred(){
+    console.log(colortext.innerText);
+    colortext.innerText='red';
+}
+
+// create a function to console log the color
+function corange(){
+    console.log(colortext.innerText);
+    colortext.innerText='orange';
+}
+
+// addEventListener to the targeted element
+orange.addEventListener('click',corange);
+
+function cyellow(){
+    console.log(colortext.innerText);
+    colortext.innerText='yellow';
+}
+yellow.addEventListener('click',cyellow);
 
 
+function cblue(){
+    console.log(colortext.innerText);
+    colortext.innerText='blue';
+}
+blue.addEventListener('click',cblue);
 
+function cgreen(){
+    console.log(colortext.innerText);
+    colortext.innerText='green';
+}
+green.addEventListener('click',cgreen);
 
+function cindigo(){
+    console.log(colortext.innerText);
+    colortext.innerText='indigo';
+}
+indigo.addEventListener('click',cindigo);
 
-
-
-
-
-// // console.log('hi');
-// function manos(){
-//     // console.log(colortext.innerText);
-//     colortext.innerText='red';
-// }
-// red.addEventListener('click', manos);
-
-
-// // First target the element then declare as a variable
-// const orange=document.getElementById('orange');
-
-// // create a function to console log the color
-// function corange(){
-//     console.log(colortext.innerText);
-//     colortext.innerText='orange';
-// }
-// // addEventListener to the targeted element
-// orange.addEventListener('click',corange);
-
-// const yellow=document.getElementById('yellow');
-// function cyellow(){
-//     console.log(colortext.innerText);
-//     colortext.innerText='yellow';
-// }
-// yellow.addEventListener('click',cyellow);
-
-
-// const blue=document.getElementById('blue');
-// function cblue(){
-//     console.log(colortext.innerText);
-//     colortext.innerText='blue';
-// }
-// blue.addEventListener('click',cblue);
-
-// const green=document.getElementById('green');
-// function cgreen(){
-//     console.log(colortext.innerText);
-//     colortext.innerText='green';
-// }
-// green.addEventListener('click',cgreen);
-
-// const indigo=document.getElementById('indigo');
-// function cindigo(){
-//     console.log(colortext.innerText);
-//     colortext.innerText='indigo';
-// }
-// indigo.addEventListener('click',cindigo);
-
-// const violet=document.getElementById('violet');
-// function cviolet(){
-//     console.log(colortext.innerText);
-//     colortext.innerText='violet';
-// }
-// violet.addEventListener('click',cviolet);
+function cviolet(){
+    console.log(colortext.innerText);
+    colortext.innerText='violet';
+}
+violet.addEventListener('click',cviolet);
 
 
 
