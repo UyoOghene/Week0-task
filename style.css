@@ -70,8 +70,12 @@ body {
 
 #colortext {
     /* background-color: aqua; */
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
+    text-decoration: wavy;
+    background-color: gray;
+    border-radius: 20px;
+    font-weight: bolder;
 
 }
 

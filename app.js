@@ -70,17 +70,23 @@ function al(event){
 function manos(){
     // console.log(colortext.innerText);
     colortext.innerText='red';
+    colortext.style.backgroundColor='red';
+
+    
 }
 red.addEventListener('click', manos);
 function cred(){
     console.log(colortext.innerText);
     colortext.innerText='red';
+
 }
 
 // create a function to console log the color
 function corange(){
     console.log(colortext.innerText);
     colortext.innerText='orange';
+    colortext.style.backgroundColor='orange';
+
 }
 
 // addEventListener to the targeted element
@@ -89,6 +95,8 @@ orange.addEventListener('click',corange);
 function cyellow(){
     console.log(colortext.innerText);
     colortext.innerText='yellow';
+    colortext.style.backgroundColor='yellow';
+
 }
 yellow.addEventListener('click',cyellow);
 
@@ -96,24 +104,32 @@ yellow.addEventListener('click',cyellow);
 function cblue(){
     console.log(colortext.innerText);
     colortext.innerText='blue';
+    colortext.style.backgroundColor='blue';
+
 }
 blue.addEventListener('click',cblue);
 
 function cgreen(){
     console.log(colortext.innerText);
     colortext.innerText='green';
+    colortext.style.backgroundColor='green';
+
 }
 green.addEventListener('click',cgreen);
 
 function cindigo(){
     console.log(colortext.innerText);
     colortext.innerText='indigo';
+    colortext.style.backgroundColor='indigo';
+
 }
 indigo.addEventListener('click',cindigo);
 
 function cviolet(){
     console.log(colortext.innerText);
     colortext.innerText='violet';
+    colortext.style.backgroundColor='violet';
+
 }
 violet.addEventListener('click',cviolet);
 
